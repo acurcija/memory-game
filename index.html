@@ -1,63 +1,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Memory Game</title>
+	<title>MEMORY GAME</title>
 	<script src="js/script.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<h1>MEMORY GAME</h1>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
+		<div class="container-fluid">
+			<div class="row" id="imageCards">
+			<div class= "col-md-12">
+				<div class="col-md-3">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">				
+								<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+							</div>
+							<div class="back">
+								<img src="https://unsplash.it/250/175/?random" alt="places" class="img-rounded">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">				
+								<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+							</div>
+							<div class="back">
+								<img src="http://placekitten.com/250/175" alt="places" class="img-rounded">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">				
+								<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+							</div>
+							<div class="back">
+								<img src="http://fillmurray.com/250/175" alt="places" class="img-rounded">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">				
+								<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+							</div>
+							<div class="back">
+								<img src="http://placekitten.com/250/175" alt="places" class="img-rounded">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="imageCards">
+			<div class= "col-md-12">
+				<div class="col-md-3">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">				
+								<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+							</div>
+							<div class="back">
+								<img src="https://placeimg.com/250/175/nature" alt="places" class="img-rounded">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">				
+								<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+							</div>
+							<div class="back">
+								<img src="https://unsplash.it/250/175/?random" alt="places" class="img-rounded">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">				
+								<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+							</div>
+							<div class="back">
+								<img src="https://placeimg.com/250/175/animals" alt="places" class="img-rounded">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">				
+								<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+							</div>
+							<div class="back">
+								<img src="https://placeimg.com/250/175/nature" alt="places" class="img-rounded">
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="row" id="imageCards">
+				<div class= "col-md-12">
 					<div class="col-md-3">
-						<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">				
+									<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+								</div>
+								<div class="back">
+									<img src="https://placeimg.com/250/175/animals" alt="places" class="img-rounded">
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="col-md-3">
-						<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">				
+									<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+								</div>
+								<div class="back">
+									<img src="http://placebear.com/250/175" alt="places" class="img-rounded">
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="col-md-3">
-						<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">				
+									<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+								</div>
+								<div class="back">
+									<img src="http://fillmurray.com/250/175" alt="places" class="img-rounded">
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="col-md-3">
-						<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">				
+									<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
+								</div>
+								<div class="back">
+									<img src="http://placebear.com/250/175" alt="places" class="img-rounded">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="col-md-3">
-						<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
-					</div>
-					<div class="col-md-3">
-						<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
-					</div>
-					<div class="col-md-3">
-						<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
-					</div>
-					<div class="col-md-3">
-						<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="col-md-3">
-						<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
-					</div>
-					<div class="col-md-3">
-						<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
-					</div>
-					<div class="col-md-3">
-						<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
-					</div>
-					<div class="col-md-3">
-						<img src="http://dummyimage.com/250x175/ada4ad/fff" alt="places" class="img-rounded">
-					</div>
-				</div>
-			</div>
+					
 		</div>
 </body>
 </html>
+
