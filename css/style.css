@@ -10,6 +10,7 @@ h1{
 
 .container-fluid{
 	margin-left: 140px;
+	margin-right: 140px;
 	padding-bottom: 1px;
 	border-bottom: .5px;
 }
@@ -43,7 +44,6 @@ h1{
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -51,8 +51,6 @@ h1{
 
 /* front pane, placed above back */
 .front {
-	z-index: 2;
-	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 
