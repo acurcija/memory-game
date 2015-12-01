@@ -5,17 +5,58 @@ h1{
 	text-align: center;
 	margin-bottom: 40px;
 	margin-top: 50px;
-	text-decoration: underline;
-	text-decoration: overline;
+	text-decoration: underline overline;
 }
 
-div{
-	margin-bottom: 5px;
-	padding-left: 5px;
+.container-fluid{
+	margin-left: 140px;
+	padding-bottom: 1px;
+	border-bottom: .5px;
 }
 
-/*.container{
-	margin-bottom: 40px;
-}*/
+.col-md-3{
+	float: left;
+	
+}
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
 
+.flip-container, .front, .back {
+	width: 320px;
+	height: 200px;
+}
 
+/* flip speed goes here */
+.flipper {
+	transition: 1.5s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
